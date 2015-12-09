@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2C229DF01C0D139D0086A16F"
-               BuildableName = "scorer.app"
+               BuildableName = "HaleScoring.app"
                BlueprintName = "scorer"
                ReferencedContainer = "container:scorer.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2C229DF01C0D139D0086A16F"
-            BuildableName = "scorer.app"
+            BuildableName = "HaleScoring.app"
             BlueprintName = "scorer"
             ReferencedContainer = "container:scorer.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2C229DF01C0D139D0086A16F"
-            BuildableName = "scorer.app"
+            BuildableName = "HaleScoring.app"
             BlueprintName = "scorer"
             ReferencedContainer = "container:scorer.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2C229DF01C0D139D0086A16F"
-            BuildableName = "scorer.app"
+            BuildableName = "HaleScoring.app"
             BlueprintName = "scorer"
             ReferencedContainer = "container:scorer.xcodeproj">
          </BuildableReference>

@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		2C229DF51C0D139D0086A16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C229DF41C0D139D0086A16F /* AppDelegate.swift */; };
 		2C229DF71C0D139D0086A16F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C229DF61C0D139D0086A16F /* ViewController.swift */; };
-		2C229DFA1C0D139D0086A16F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C229DF81C0D139D0086A16F /* Main.storyboard */; };
 		2C229DFD1C0D139D0086A16F /* scorer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C229DFB1C0D139D0086A16F /* scorer.xcdatamodeld */; };
 		2C229DFF1C0D139D0086A16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C229DFE1C0D139D0086A16F /* Assets.xcassets */; };
 		2C229E021C0D139D0086A16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C229E001C0D139D0086A16F /* LaunchScreen.storyboard */; };
 		2C229E0D1C0D139E0086A16F /* scorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C229E0C1C0D139E0086A16F /* scorerTests.swift */; };
 		2C229E181C0D139E0086A16F /* scorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C229E171C0D139E0086A16F /* scorerUITests.swift */; };
+		2C229E261C0D17990086A16F /* ScoringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C229E251C0D17980086A16F /* ScoringViewController.swift */; };
+		2C3A850A1C15570300A7AE15 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A85091C15570300A7AE15 /* SubViewController.swift */; };
+		2CA285E61C0FCE120034DD2D /* BoxScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA285E51C0FCE120034DD2D /* BoxScoreViewController.swift */; };
+		2CA285E81C0FE89D0034DD2D /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA285E71C0FE89D0034DD2D /* PlayerViewController.swift */; };
+		2CA285EA1C0FF18F0034DD2D /* textCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA285E91C0FF18F0034DD2D /* textCell.swift */; };
+		2CA285EC1C10063C0034DD2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA285EB1C10063C0034DD2D /* Main.storyboard */; };
+		2CF5B7681C0E78D200F8BCD1 /* subOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF5B7671C0E78D200F8BCD1 /* subOutCell.swift */; };
+		2CF5B76A1C0E78E200F8BCD1 /* subInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF5B7691C0E78E200F8BCD1 /* subInCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C229DF11C0D139D0086A16F /* scorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C229DF11C0D139D0086A16F /* HaleScoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaleScoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C229DF41C0D139D0086A16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C229DF61C0D139D0086A16F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2C229DF91C0D139D0086A16F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C229DFC1C0D139D0086A16F /* scorer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = scorer.xcdatamodel; sourceTree = "<group>"; };
 		2C229DFE1C0D139D0086A16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C229E011C0D139D0086A16F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,14 @@
 		2C229E131C0D139E0086A16F /* scorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scorerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C229E171C0D139E0086A16F /* scorerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scorerUITests.swift; sourceTree = "<group>"; };
 		2C229E191C0D139E0086A16F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C229E251C0D17980086A16F /* ScoringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoringViewController.swift; sourceTree = "<group>"; };
+		2C3A85091C15570300A7AE15 /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
+		2CA285E51C0FCE120034DD2D /* BoxScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxScoreViewController.swift; sourceTree = "<group>"; };
+		2CA285E71C0FE89D0034DD2D /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		2CA285E91C0FF18F0034DD2D /* textCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textCell.swift; sourceTree = "<group>"; };
+		2CA285EB1C10063C0034DD2D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = BasketballScoringApp/Main.storyboard; sourceTree = "<group>"; };
+		2CF5B7671C0E78D200F8BCD1 /* subOutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subOutCell.swift; sourceTree = "<group>"; };
+		2CF5B7691C0E78E200F8BCD1 /* subInCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subInCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +103,7 @@
 		2C229DF21C0D139D0086A16F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C229DF11C0D139D0086A16F /* scorer.app */,
+				2C229DF11C0D139D0086A16F /* HaleScoring.app */,
 				2C229E081C0D139E0086A16F /* scorerTests.xctest */,
 				2C229E131C0D139E0086A16F /* scorerUITests.xctest */,
 			);
@@ -101,7 +115,14 @@
 			children = (
 				2C229DF41C0D139D0086A16F /* AppDelegate.swift */,
 				2C229DF61C0D139D0086A16F /* ViewController.swift */,
-				2C229DF81C0D139D0086A16F /* Main.storyboard */,
+				2CA285E71C0FE89D0034DD2D /* PlayerViewController.swift */,
+				2CA285E91C0FF18F0034DD2D /* textCell.swift */,
+				2CA285EB1C10063C0034DD2D /* Main.storyboard */,
+				2CA285E51C0FCE120034DD2D /* BoxScoreViewController.swift */,
+				2CF5B7671C0E78D200F8BCD1 /* subOutCell.swift */,
+				2CF5B7691C0E78E200F8BCD1 /* subInCell.swift */,
+				2C3A85091C15570300A7AE15 /* SubViewController.swift */,
+				2C229E251C0D17980086A16F /* ScoringViewController.swift */,
 				2C229DFE1C0D139D0086A16F /* Assets.xcassets */,
 				2C229E001C0D139D0086A16F /* LaunchScreen.storyboard */,
 				2C229E031C0D139D0086A16F /* Info.plist */,
@@ -145,7 +166,7 @@
 			);
 			name = scorer;
 			productName = scorer;
-			productReference = 2C229DF11C0D139D0086A16F /* scorer.app */;
+			productReference = 2C229DF11C0D139D0086A16F /* HaleScoring.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2C229E071C0D139E0086A16F /* scorerTests */ = {
@@ -196,6 +217,7 @@
 				TargetAttributes = {
 					2C229DF01C0D139D0086A16F = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = J44PM8Q84B;
 					};
 					2C229E071C0D139E0086A16F = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -232,9 +254,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA285EC1C10063C0034DD2D /* Main.storyboard in Resources */,
 				2C229E021C0D139D0086A16F /* LaunchScreen.storyboard in Resources */,
 				2C229DFF1C0D139D0086A16F /* Assets.xcassets in Resources */,
-				2C229DFA1C0D139D0086A16F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +281,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA285EA1C0FF18F0034DD2D /* textCell.swift in Sources */,
 				2C229DF71C0D139D0086A16F /* ViewController.swift in Sources */,
+				2C3A850A1C15570300A7AE15 /* SubViewController.swift in Sources */,
 				2C229DFD1C0D139D0086A16F /* scorer.xcdatamodeld in Sources */,
+				2CA285E61C0FCE120034DD2D /* BoxScoreViewController.swift in Sources */,
+				2CF5B7681C0E78D200F8BCD1 /* subOutCell.swift in Sources */,
+				2CA285E81C0FE89D0034DD2D /* PlayerViewController.swift in Sources */,
+				2CF5B76A1C0E78E200F8BCD1 /* subInCell.swift in Sources */,
+				2C229E261C0D17990086A16F /* ScoringViewController.swift in Sources */,
 				2C229DF51C0D139D0086A16F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +326,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2C229DF81C0D139D0086A16F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C229DF91C0D139D0086A16F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2C229E001C0D139D0086A16F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -403,10 +424,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = scorer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jk.scorer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HaleScoring;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -414,10 +439,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = scorer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jk.scorer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HaleScoring;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -488,6 +517,7 @@
 				2C229E1E1C0D139E0086A16F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C229E1F1C0D139E0086A16F /* Build configuration list for PBXNativeTarget "scorerTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +526,7 @@
 				2C229E211C0D139E0086A16F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C229E221C0D139E0086A16F /* Build configuration list for PBXNativeTarget "scorerUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +535,7 @@
 				2C229E241C0D139E0086A16F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
