@@ -549,11 +549,15 @@ class ScoringViewController: UIViewController {
         let nameLabels = [name1, name2, name3, name4, name5]
         for(var i=0; i<players.count; i++) {
             if((players[i].valueForKey("inlineup") as! Bool)) {
-                nameLabels[counter].text = players[i].valueForKey("name") as! String
-                lineup.append(players[i].valueForKey("name") as! String)
-                counter++
+                if((players[i].valueForKey("game") as! Int) == game) {
+                    nameLabels[counter].text = players[i].valueForKey("name") as! String
+                    lineup.append(players[i].valueForKey("name") as! String)
+                    counter++
+                }
             } else {
-                bench.append(players[i].valueForKey("name") as! String)
+                if(!(players[i].valueForKey("inlineup") as! Bool)) {
+                    bench.append(players[i].valueForKey("name") as! String)
+                }
             }
         }
     }
@@ -601,6 +605,7 @@ class ScoringViewController: UIViewController {
             let controller = segue.destinationViewController as! SubViewController
         
             controller.games = games
+            controller.game = game
             
         }
     }

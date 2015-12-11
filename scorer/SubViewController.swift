@@ -46,16 +46,19 @@ class SubViewController: UIViewController, UITableViewDataSource, UITableViewDel
         players = fetchedR
         
         
+        lineup = [String]()
+        bench = [String]()
+        
         for(var i=0; i<players.count; i++) {
-            if((players[i].valueForKey("inlineup") as! Bool)) {
-                lineup.append(players[i].valueForKey("name") as! String)
-                counter++
-            } else {
-                bench.append(players[i].valueForKey("name") as! String)
+            if((players[i].valueForKey("game") as! Int) == game) {
+                print("Player's game: " + String(players[i].valueForKey("game") as! Int))
+                if((players[i].valueForKey("inlineup") as! Bool)) {
+                    lineup.append(players[i].valueForKey("name") as! String)
+                } else {
+                    bench.append(players[i].valueForKey("name") as! String)
+                }
             }
         }
-        
-        
     }
     
     func done(sender: UIButton) {
@@ -120,32 +123,27 @@ class SubViewController: UIViewController, UITableViewDataSource, UITableViewDel
         
         for(var i=0; i<players.count; i++) {
             if((players[i].valueForKey("name") as! String) == player) {
-                
-                print("!")
-                
-                //CoreData stuff
-                let appDelegate =
-                UIApplication.sharedApplication().delegate as! AppDelegate
-                let managedContext = appDelegate.managedObjectContext
-                let entity =  NSEntityDescription.entityForName("Player",
-                    inManagedObjectContext:
-                    managedContext)
-                
-                players[i].setValue(true, forKey: "inlineup")
-                
-                var error: NSError?
-                do {
-                    try managedContext.save()
-                } catch var error1 as NSError {
-                    error = error1
-                    print("Could not save \(error), \(error?.userInfo)")
+                if((players[i].valueForKey("game") as! Int) == game) {
+                    //CoreData stuff
+                    let appDelegate =
+                    UIApplication.sharedApplication().delegate as! AppDelegate
+                    let managedContext = appDelegate.managedObjectContext
+                    let entity =  NSEntityDescription.entityForName("Player",
+                        inManagedObjectContext:
+                        managedContext)
+                    
+                    players[i].setValue(true, forKey: "inlineup")
+                    
+                    var error: NSError?
+                    do {
+                        try managedContext.save()
+                    } catch var error1 as NSError {
+                        error = error1
+                        print("Could not save \(error), \(error?.userInfo)")
+                    }
+                    
+                    break;
                 }
-                
-                if(players[i].valueForKey("inlineup") as! Bool) {
-                    print("!!")
-                }
-                
-                break;
             }
         }
         self.outTable.reloadData()
@@ -158,25 +156,26 @@ class SubViewController: UIViewController, UITableViewDataSource, UITableViewDel
         bench.append(player)
         for(var i=0; i<players.count; i++) {
             if((players[i].valueForKey("name") as! String) == player) {
-                
-                //CoreData stuff
-                let appDelegate =
-                UIApplication.sharedApplication().delegate as! AppDelegate
-                let managedContext = appDelegate.managedObjectContext
-                let entity =  NSEntityDescription.entityForName("Player",
-                    inManagedObjectContext:
-                    managedContext)
-                
-                players[i].setValue(false, forKey: "inlineup")
-                
-                var error: NSError?
-                do {
-                    try managedContext.save()
-                } catch var error1 as NSError {
-                    error = error1
-                    print("Could not save \(error), \(error?.userInfo)")
+                if((players[i].valueForKey("game") as! Int) == game) {
+                    //CoreData stuff
+                    let appDelegate =
+                    UIApplication.sharedApplication().delegate as! AppDelegate
+                    let managedContext = appDelegate.managedObjectContext
+                    let entity =  NSEntityDescription.entityForName("Player",
+                        inManagedObjectContext:
+                        managedContext)
+                    
+                    players[i].setValue(false, forKey: "inlineup")
+                    
+                    var error: NSError?
+                    do {
+                        try managedContext.save()
+                    } catch var error1 as NSError {
+                        error = error1
+                        print("Could not save \(error), \(error?.userInfo)")
+                    }
+                    break;
                 }
-                break;
             }
         }
         self.outTable.reloadData()
