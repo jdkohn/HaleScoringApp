@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B7FCC8AD630A20B7C3C4E7606FAC9C702480AD08",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B7FCC8AD630A20B7C3C4E7606FAC9C702480AD08" : 0,
+    "DC2226858678E044CDAE3496067714A24F113348" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B77E6E2E-86FA-4085-BA8A-A212EF4A2CB3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B7FCC8AD630A20B7C3C4E7606FAC9C702480AD08" : "scorer%20copy\/",
+    "DC2226858678E044CDAE3496067714A24F113348" : "scorer%20copy\/scorer\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "scorer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "scorer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jdkohn\/HaleScoringApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B7FCC8AD630A20B7C3C4E7606FAC9C702480AD08"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jdkohn\/Basketball-Scoring-App.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DC2226858678E044CDAE3496067714A24F113348"
+    }
+  ]
+}

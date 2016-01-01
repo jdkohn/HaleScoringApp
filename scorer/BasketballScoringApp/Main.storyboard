@@ -67,10 +67,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Box Score View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0v-EJ-Trk">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="60"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2MU-iz-PF3"/>
                                     <constraint firstAttribute="height" constant="44" id="2eu-ye-EKy"/>
                                     <constraint firstAttribute="height" constant="44" id="DJJ-bk-r5g"/>
                                 </constraints>
@@ -79,6 +80,7 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="2eu-ye-EKy"/>
                                         <exclude reference="DJJ-bk-r5g"/>
                                     </mask>
                                 </variation>

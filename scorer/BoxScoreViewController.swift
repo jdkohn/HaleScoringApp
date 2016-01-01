@@ -83,7 +83,7 @@ class BoxScoreViewController: UIViewController, UITableViewDataSource {
     }
     
     func makeTable() {
-        boxScore.frame = CGRectMake(0, 44, self.view.frame.size.width, self.view.frame.size.height - 64)
+        boxScore.frame = CGRectMake(0, 80, self.view.frame.size.width, self.view.frame.size.height - 124)
     }
     
     

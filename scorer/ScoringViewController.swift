@@ -545,6 +545,8 @@ class ScoringViewController: UIViewController {
     
     
     func setNameLabels() {
+        lineup = [String]()
+        bench = [String]()
         var counter = 0
         let nameLabels = [name1, name2, name3, name4, name5]
         for(var i=0; i<players.count; i++) {
